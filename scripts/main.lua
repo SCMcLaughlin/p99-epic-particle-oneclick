@@ -13,7 +13,9 @@ for _, f34 in wld:getFragsByType(0x34) do
 end
 
 -- Make a backup copy before we commit changes
-File.copy("gequip.s3d", "gequip.zae")
+if not File.exists("gequip.zae") then
+    File.copy("gequip.s3d", "gequip.zae")
+end
 
 pfs:importFromMemory("gequip.wld", wld:getData())
 pfs:save()
