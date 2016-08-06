@@ -1,0 +1,11 @@
+*
+!.gitignore
+!*.sln
+!*.vcproj
+!*.c
+!*.lua
+!*.lib
+!bin/
+!include/
+!lib/
+!scripts/
